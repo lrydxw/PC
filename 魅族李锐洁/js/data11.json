@@ -1,0 +1,12 @@
+
+{
+		"001":[
+			{"imgsrc":"img/phone1_180x180.png","name":"魅族PRO 6","price":"2400"},
+			{"imgsrc":"img/phone2_180x180.png","name":"魅族PRO 6","price":"2400"}		
+		],
+		"002":[
+			{"imgsrc":"img/phone1_180x180.png","name":"魅族PRO 5","price":"2200"},
+			{"imgsrc":"img/phone2_180x180.png","name":"魅族PRO 5","price":"2200"}		
+		]
+	
+}

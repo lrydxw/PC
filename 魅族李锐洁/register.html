@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>魅族登录</title>
+        <link href="//store.res.meizu.com/resources/php/store/java/layout/img/favicon-2e71785f44.ico" rel="shortcut icon" type="image/x-icon">
+        <link href="//store.res.meizu.com/resources/php/store/java/layout/img/favicon-2e71785f44.ico" rel="icon" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<script type="text/javascript" src="js/demo02.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<script type="text/javascript" src="js/register.js" ></script>
+
+	</head>
+	
+	<body>
+<!--------------------登录——header------------------------------------------->
+		<div class="reg-header">
+			<div class="reg-header-c">
+				<div class="reg-header-logo">
+					 <a href="index.html">
+			            <img src="img/logo-header.png"/>
+			         </a>
+				</div>
+				<div class="reg-header-right">
+					<span><a href="register.html">登录 </a><em>|</em></span>
+					<i><a href="register_zc.html">注册</a></i>
+				</div>
+			</div>
+		</div>
+<!--------------------登录——con------------------------------------------->		
+		<div class="reg-con">
+			<div class="reg-con-c">
+				<div class="con-header">
+					<a  class="active" href="###">普通登录&nbsp;&nbsp;&nbsp;&nbsp;</a>
+					<!--<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>-->
+					<a href="###">验证码登录</a>
+				</div>
+		<!--------------------普通登录---------------->			
+				<div class="reg-pt active">
+					<div class="reg-box">
+						<div class="pt-phone">
+							<input type="text" id="pt-phone" placeholder="手机号/Flyme账户名" value="15300000000"/>
+							<i class="tip">请输入手机号/Flyme账户名</i>
+						</div>
+						<em class="error"></em>
+					</div>
+					<div class="reg-box">
+						<div class="pt-password">
+							<input type="password" id="pt-password" placeholder="密码" value="w15300000000"/>
+							<i class="tip">请输入密码</i>
+						</div>
+					</div>
+					
+					<div class="reg-box">
+						<div class="pt-checkbox">
+							<input type="checkbox" id="pt-checkbox" />
+							<span>记住登录状态</span>
+							<img class="ewm-x" src="img/reg.jpg" />
+							<img class="ewm" src="img/ewm.png" />
+							<a href="###">忘记密码？</a>							
+							<!--<i class="tip">0000</i>-->
+						</div>
+						<em class="error"></em>
+					</div>
+					<div class="reg-box">
+						<div class="denglu" onclick=''><a href="###">登录</a></div>	
+						<div class="reg-sq">社区账户转换为Flyme账户</div>
+					</div>
+				</div>
+				
+		<!--------------------验证码登录---------------->	
+				<div class="reg-pt">
+					<div class="reg-box">
+						<div class="yz-phone">
+							<input type="text" id="yz-phone" placeholder="+86" />
+							<span></span>
+							<input type="text" id="yz-phone1" placeholder="手机号码" />
+							<i class="tip">请输入手机号码</i>
+						</div>
+						<em class="error"></em>
+					</div>
+					
+					<div class="reg-box">
+						<div class="yz-yzm">
+							<input type="text" id="yz-yzm" placeholder="验证码" />
+							<span>获取验证码</span>
+							<i class="tip">请输入手机收到的验证码</i>
+							<!--<i class="tip">0000</i>-->
+						</div>
+						<em class="error"></em>
+					</div>
+					<div class="reg-box">
+						<div class="denglu_yz"><a href="###">登录</a></div>
+					</div>	
+				</div>
+				
+		
+			</div>
+		</div>
+
+	<!--<script>
+		$(".con-header a").click(function(){
+			var index=$(this).index();
+			$(".reg-pt").eq(index).addClass("active").siblings().removeClass("active");	
+			$(this).addClass("active").siblings().removeClass("active");
+		})
+		
+
+
+	</script>-->
+
+<!--------------------reg--footer------------------------------------------->	
+		<div class="reg-footer">
+			<div class="reg-footer-c">
+				<div class="reg-footer-left">
+					<a href="###">关于魅族</a>｜<a href="###">工作机会</a>｜<a href="###">联系我们</a>｜｜<a href="###">法律声明</a>｜<a href="###">常见问题</a>｜<a href="###">简体中文</a>
+				</div>
+				<div class="reg-footer-left">
+					<span>客服热线</span>
+					<em>400-788-3333</em>
+					<i><a href="###">在线客服</a></i>
+				</div>
+				<div class="reg-footer-img">
+					<a href="###"><img src="img/xiao01.jpg"/></a>
+					<a href="###"><img src="img/xiao02.jpg"/></a>
+					<a href="###"><img src="img/xiao03.jpg"/></a>
+					<a href="###"><img src="img/xiao04.jpg"/></a>
+				</div>
+				<!--<div class="reg-footer-language">
+					<a href="###">简体中文</a>
+					<a href="###">English</a>
+				</div>-->
+				<br />
+				<br />
+				<b>©2016 Meizu Telecom Equipment Co., Ltd. All rights reserved.备案号: 粤ICP备13003602号-4经营许可证编号: 粤B2-20130198营业执照</b>
+			</div>			
+		</div>
+		 
+		 
+	</body>
+</html>

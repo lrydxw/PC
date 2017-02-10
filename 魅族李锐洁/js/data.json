@@ -1,0 +1,21 @@
+{
+	"datas":	
+		[
+			{
+			"target":"###",
+			"imgSrc":"img/banner01.jpg"
+			},
+			{
+			"target":"phone.html",
+			"imgSrc":"img/banner02.jpg"
+			},
+			{
+			"target":"active.html",
+			"imgSrc":"img/banner03.jpg"
+			},
+			{
+			"target":"###",
+			"imgSrc":"img/banner05.jpg"
+			}
+		]
+}

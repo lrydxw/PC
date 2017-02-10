@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*---------购物车页面-------------------*/
+
+table{
+	border-collapse:collapse;
+	width:1240px;
+}
+tbody{
+	border-collapse:collapse;
+}
+
+.shopping-cart{
+	width:1240px;
+	min-height:400px;
+	height:auto!important;
+	height:400px;	
+	margin:0 auto;
+}
+.shopping-cart h1{
+	text-align:center;
+	line-height:400px;
+}
+
+
+
+
+
+.pList tr,.shopping-cart thead{
+	border:1px solid #ccc;
+	padding:20px 10px;
+	overflow: hidden;
+	display:block;
+	/*border-collapse:collapse;*/
+	
+}
+/*.shopping-cart thead{
+	background:#32a5e7;
+	border:none;
+	color:#fff;
+}*/
+.shopping-cart thead .th-pro{
+	width:500px;	
+	display:inline-block;
+}
+.shopping-cart thead .th-count{
+	width:150px;
+	display:inline-block;
+	text-align:center;	
+	margin-left:20px;
+}
+
+
+
+
+.pList tr img{
+	display:inline-block;
+	width:86px;
+	height:86px;
+	/*float:left;*/
+	margin-left:60px;
+}
+.pList span{	
+
+	display:inline-block;
+	line-height:86px;
+	height:86px;
+	width:390px;
+	text-align:center;
+
+}
+
+.pList i{
+	display:inline-block;
+	width:120px;
+	line-height:86px;
+	text-align:center;
+	margin-right:26px;
+}
+
+.pList strong{
+	display:inline-block;
+	width:30px;
+	height:30px;
+	border:1px solid #ccc;
+	/*background:#ccc;*/
+	text-align:center;
+	line-height:30px;
+	cursor: pointer;
+	margin:0 20px;
+}
+.pList em{
+	display:inline-block;
+	padding:0 10px;
+}
+
+.pList b{
+	display:inline-block;
+	width:180px;
+	text-align:center;
+	
+}
+.pList .del{
+
+	cursor: pointer;
+	padding-left:60px;
+}
+
+
+
+
+
+.payment{
+	/*width:1240px;*/
+	/*height:200px;*/
+	/*background:#ccc;*/
+	margin-top:50px;
+	overflow: hidden;
+}
+
+
+
+.payment ul{
+	float:right;
+	width:250px;
+	margin-right:10px;
+}
+
+.payment li{
+	padding:20px 0;
+}
+.payment span{
+	float:right;
+}
+.payment a{
+	display:inline-block;
+	width:250px;
+	height:36px;
+	background:#0286d0;
+	text-align:center;
+	line-height:36px;
+	color:#fff;
+	border-radius:2px;
+}
+.payment .line{
+	border-top:1px solid #ccc;
+	margin-top:30px;
+}
+.payment .line span{
+	color:#00C3F5;
+	font-weight: 600;
+	font-size:20px;
+}

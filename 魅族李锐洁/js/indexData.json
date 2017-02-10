@@ -1,0 +1,13 @@
+{
+	"banner":[			
+			{"target":"###","imgSrc":"../img/banner1.jpg"},
+			{"target":"phone.html","imgSrc":"../img/banner2.jpg"},
+			{"target":"active.html","imgSrc":"../img/banner3.jpg"}
+		],
+	"img01":[
+			{"target":"###","imgSrc":"../img/banner1.jpg"},
+			{"target":"###","imgSrc":"../img/banner1.jpg"}
+	
+	]
+}
+

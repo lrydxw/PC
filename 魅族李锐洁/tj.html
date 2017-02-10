@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>提交订单</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/pub.css"/>
+	
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	
+        <link href="//store.res.meizu.com/resources/php/store/java/layout/img/favicon-2e71785f44.ico" rel="shortcut icon" type="image/x-icon">
+        <link href="//store.res.meizu.com/resources/php/store/java/layout/img/favicon-2e71785f44.ico" rel="icon" type="image/x-icon">
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<script type="text/javascript" src="js/style.js" ></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+		function FreshTime(){
+			var nowtime = new Date();
+			var endtime=new Date("2016/11/20,24:00:00");//结束时间new Date("2016/11/20,12:20:12")
+			//当前时间
+			
+		    var lefttime=parseInt((endtime.getTime()-nowtime.getTime())/1000); 
+		    d=tool(parseInt(lefttime/3600/24));
+		    h=tool(parseInt((lefttime/3600)%24));
+		    m=tool(parseInt((lefttime/60)%60));
+		    s=tool(parseInt(lefttime%60));
+		    a=tool(0);
+		    
+			//document.getElementById("LeftTime").innerHTML="还剩" + d+"天"+h+"小时"+m+"分"+s+"秒";
+			var times=$(".lefttime");
+			
+			for(var i=0;i<times.length;i++){
+				//$(".LeftTime").eq(i).html("剩余" + d+"天"+h+"小时"+m+"分"+s+"秒");
+				$(".xiaoshi").html(h);
+				$(".fenzhong").html(m);
+				$(".miao").html(s);
+				if(lefttime<=0){
+				    //$(".lefttime").html=("团购已结束");
+				    clearInterval(sh);
+				    $(".xiaoshi").html(a);
+					$(".fenzhong").html(a);
+					$(".miao").html(a);
+				}
+			}
+			
+		}
+			function tool(num){
+		 	if(num < 10){
+		 		return "0" + num;
+		 	}
+		 	return num;
+		}
+		
+		var arrs;
+		var fenlei;
+	window.onload=function(){
+		
+		FreshTime();
+		var sh;
+		sh=setInterval(FreshTime,1000);}
+		</script>
+		<style>
+			body{
+				background-color: #FAFAFC;
+			}
+			.container{
+				width:1150px;
+				
+				min-height:700px;
+				height:auto!important;
+				height:700px;
+			}
+			.container-fluid{
+				background-color: #fff;
+				height:250px;
+			}
+			.col-md-1{
+				
+			}
+			.col-md-3{
+				height:60px;
+				background-color: #fff;
+				
+			}
+			.col-md-9{
+				margin:15px 0px;
+				height:60px;
+				background-color: #fff;
+			}
+			.col-md-12{
+				margin:15px 0px;
+				
+				
+				background-color: #fff;
+			}
+			.loginbox{
+				border:coral solid 1px;
+				height:400px;
+				}
+			.phone-detail-text{
+				width:1240px;
+				height:56px;
+				/*float:left;*/
+				/*border-bottom:1px solid #ccc;*/	
+			}
+			.phone-detail-text li{
+				float:left;	
+				width:108px;
+				height:56px;
+				display:block;
+				line-height:56px;
+				text-align:center;
+				
+			}
+			.phone-detail-text li.active{
+				color:#2ac4f6;
+				border-bottom:1px solid #2ac4f6;
+				width:108px;
+				height:56px;
+				display:block;
+				line-height:56px;
+				text-align:center;
+			}
+
+			.phone-detail-text li.active a{
+				color:#2AC4F6;
+			}
+			
+			/*---------table---------------*/
+			
+			.phone-detail-s{
+				margin-top:40px;
+				
+				/*width:1240px;*/
+			}
+			.phone-detail-sp{
+				display:none;
+				/*width:1240px;*/
+				
+			}
+			.phone-detail-sp div{
+				width:200px;
+				height:80px;
+				float:left;
+				margin:20px 20px;
+				position:relative;
+			}
+			.phone-detail-sp div input{
+				position:absolute;
+				top:10px;
+				
+			}
+			.phone-detail-sp img:hover{
+				opacity:.7;
+				fliter:alpha(opacity=70)
+			}
+			.phone-detail-sp.active{
+				display:block;
+			}
+			.phone-detail-sp table{
+				border-collapse:collapse;
+				
+			}
+			
+			.phone-detail-sp tr{
+				height:50px;	
+				border:1px solid #ccc;
+			}
+			.phone-detail-sp td{
+				height:50px;
+				
+				padding:0 10px 0 10px;
+			}
+			.phone-detail-sp th{
+				width:80px;	
+				padding:0 10px 0 10px;
+			}
+			.lefttime{
+				color:red;
+			}
+			#headerr h4:hover{
+			text-decoration:none;
+			}
+			#headerr h4{
+			margin-top:10px;
+			text-decoration:none;
+			}
+		</style>
+		<script>
+		$(function(){
+		$(".img").click(
+		function(){
+		alert("去支付啦")
+		}
+		)
+		$(".dd").hide();
+		$(".i1").click(function(){
+		
+		$(".dd").slideDown()
+		})
+		})
+		</script>
+	</head>
+	<body>
+		<!-- bootstrap内置样式：容器： container-fluid-->
+		
+		<div class="container-fluid">
+			
+		<div id="headerr" style="margin:0px; auto"></div>	
+		</div>
+		<!-- bootstrap内置样式，容器：container -->
+		<div class="container">
+			<!-- 内置样式：行 -->
+			<div class="row">
+				<!-- 内置样式：列；默认12列 -->
+				<div class="col-md-9" style="margin:0px 0px">
+					<h4 class="h4" style="line-height:40px;"><strong>在线支付</strong></h4>
+				</div>
+				<div class="col-md-3">
+					<p class="text-right" style="line-height:60px;"><span style="color:#00C3F5">确认订单</span>><span style="color:#00C3F5">在线支付</span>>完成</p>
+					
+				</div>
+				
+				<div class="col-md-12">
+					<div class="col-md-1"><img src="img/dd.png" alt="" /></div>
+					<div class="col-md-11" style="overflow:hidden">
+						<h4 class="text-left" style="color:red;line-height:40px;">订单提交成功，应付金额 <span>￥79.00</span></h4></div>
+					<br/><p style="margin:20px 0 10px 108px ;color:red;">该宝贝为付款减库存,拍下并不代表购买成功哦。请您尽快付款，付款后我们将会尽快安排发货。</p><br />
+					<p style="margin:-20px 0 10px 108px ">订单号：21111543391731079030     请您在提交订单后 <span class="lefttime"><span class="xiaoshi">21</span>时<span class="fenzhong">59</span>分<span class="miao">09</span>秒</span> 内完成支付，否则订单会自动取消</p>
+					<p class="pp" style="margin:20px 0 10px 108px ;">    </p>
+					<p style="margin:10px 0 10px 108px ">收货地址： 北京北京市朝阳区朝外街道昭阳区。。。。。。。。。。。。。。。。。。。。。。。100020(邮编) lrydxw(收)<br />  15225786172</p>
+					<div class="col-md-3" style="margin-top:40px;">
+						<ul class="phone-detail-text">
+							<li class="active" style="float:left;"><a href="###">在线支付</a></li>
+							<li style="float:left;"><a href="###">支付宝扫码</a></li>
+							<li style="float:left;"><a href="###">微信扫码</a></li>
+						</ul>
+					</div>
+					<div class="col-md-12" style="height:600px;">
+						<div class="phone-detail-s">
+							
+							<div class="phone-detail-sp active col-md-12">
+						
+  								<div class="radio" style="margin-top:-20px;"><label><input type="radio" name="optionsRadios" /><img src="img/m1.png" /></label></div>
+  								<div class="radio" style="margin-right:400px;margin-top:-20px;"><label><input type="radio" name="optionsRadios" checked="checked"/><img src="img/m2.png" /></label></div>
+  								<div class="radio"><label><input type="radio" class="i1" name="optionsRadios"/><img src="img/m3.png" /></label></div>
+  								<div class="radio"><label><input type="radio" name="optionsRadios"/><img src="img/m4.png" /></label></div>
+  								<div class="radio"><label><input type="radio" name="optionsRadios"/><img src="img/m5.png" /></label></div>
+  								<div class="radio"><label><input type="radio" name="optionsRadios"/><img src="img/m6.png" /></label></div>
+  								<div class="radio"><label><input type="radio" name="optionsRadios"/><img src="img/m7.png" /></label></div>
+  								<div class="radio"><label><input type="radio" name="optionsRadios"/><img src="img/m8.png" /></label></div>
+  								<div class="radio"><label><input type="radio" name="optionsRadios"/><img src="img/m9.png" /></label></div>
+  					
+  								<div class="dd" style="margin:10px;width: 710px;">
+									<table style=" width: 710px;">
+		                                <tr style="font-weight:900;background:#F0F0F0;text-align:center"><th>银行名称 </th><td>限额 </td><td>支持卡种</td><td style="width:80px">客服电话</td></tr>
+		                                <tr><th><img src="img/m3.png" /></th><td>储蓄卡：动态口令卡用户单笔限额1000元，每日限额3000元；
+	准贷记卡：动态口令卡用户单笔限额1000元，每日限额3000元；移动证书用户无限额。
+	（注：农行企业版的支付限额以在银行设置的限额为准）</td><td style="width:120px;text-align:center">借记卡/准贷记卡</td><td>95599</td></tr>
+		                            </table>
+	                        	</div>
+	                        	<img src="img/lj.png" class="img" style="margin:400px 0 0 800px" />
+							</div>
+							
+							<div class="phone-detail-sp col-md-12">
+								<img src="img/zz.png" style="margin-left:400px;" />
+							</div>
+							<div class="phone-detail-sp col-md-12">
+								<img src="img/wx.png" style="margin-left:400px;"/>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>
+					
+					
+					
+				</div>
+			
+			
+			</div>
+			
+		
+		</div>
+		<div class="container-fluid">
+			<div id="foot"></div>
+		</div>
+	</body>
+</html>

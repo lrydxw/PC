@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="lib/dist/css/bootstrap.min.css"/>
+		<script src="lib/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			.container{
+				border:palevioletred solid 1px;
+			}
+			.container-fluid{
+				background-color: orange;
+				height:100px;
+			}
+			.col-md-1{
+				border:orange solid 1px;
+			}
+			.loginbox{border:coral solid 1px;height:400px;}
+		</style>
+	</head>
+	<body>
+		<!-- bootstrap内置样式：容器： container-fluid-->
+		<div class="container-fluid">
+			<div class="col-md-6" style="margin-top:50px;">
+				<div class="input-group">
+			      <div class="input-group-addon">@</div>
+			      <input class="form-control" type="email" placeholder="Enter email">
+	   			</div>
+			</div>
+		</div>
+		<!-- bootstrap内置样式，容器：container -->
+		<div class="container">
+			<!-- 内置样式：行 -->
+			<div class="row hidden-xs hidden-sm">
+				<!-- 内置样式：列；默认12列 -->
+				<div class="col-md-1">内容</div>
+				<div class="col-md-1">内容</div>
+				<div class="col-md-1">内容</div>
+				<div class="col-md-1">内容</div>
+				<div class="col-md-1">内容</div>
+				<div class="col-md-1">内容</div>
+				<div class="col-md-1">内容</div>
+				<div class="col-md-1">内容</div>
+				<div class="col-md-1">内容</div>
+				<div class="col-md-1">内容</div>
+				<div class="col-md-1">内容</div>
+				<div class="col-md-1">内容</div>
+				<!-- 超出12列的部分，自动换行到下一行显示 -->
+			
+			</div>
+			
+			<div class="row">
+				<!-- 左边广告 -->
+				<div class="col-md-6 loginbox hidden-xs hidden-sm">
+					广告内容部分广告内容部分广告内容部分
+					<img src="img/2.jpg" alt="" class="img-rounded" />
+				</div>
+				<!-- 右边表单 -->
+				<div class="col-md-6 loginbox">
+					登录表单
+					<form class="form-horizontal" role="form">
+					  <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+					    <div class="col-sm-10">
+					      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+					    <div class="col-sm-10">
+					      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <div class="col-sm-offset-2 col-sm-10">
+					      <div class="checkbox">
+					        <label>
+					          <input type="checkbox"> Remember me
+					        </label>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <div class="col-sm-offset-2 col-sm-10">
+					      <button type="submit" class="btn btn-default">Sign in</button>
+					    </div>
+					  </div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			页面底部：页脚部分
+		</div>
+	</body>
+</html>

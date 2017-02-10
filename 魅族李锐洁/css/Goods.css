@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,h1,h2,h3,h4,h5,h6,p,a,img,ul,li,lo,dl,dd,dt,input{padding:0;margin:0;}
+img{display:block;}
+ul,ol{list-style:none;}
+
+body{font-size:12px;color:#3e3e3e;font-family:"微软雅黑";}
+body,html{width: 100%;}
+a{text-decoration:none;color:#3e3e3e;}
+a:hover{text-decoration:none;color:#o3f;}
+
+
+/*=========公共======*/
+.w{width:1080px;margin:0 auto;}
+.l{float:left;}
+.r{float:right;}
+/*========shop===============*/
+
+#shop{width: 100%;background:url(../images/shop/bg.png) repeat;overflow: hidden;}
+
+#shop .list{height: 20px;font-size: 14px;line-height: 20px;padding-top: 10px;padding-bottom: 10px;}
+#shop .list li a{color: #999}
+
+#shop .xq{background: #fff;height: 620px;position: relative;}
+#shop .xq .left{  left:10px; top:20px; position:absolute;}
+#shop .xq #xq{width:548px;  left:510px; top:20px; position:absolute;}
+#shop .xq .option{ margin-top:5px;margin-left: 20px;width:400px;height:100px;}
+#shop .xq .option>img{border:1px solid #ccc; height: 76px;width: 76px; margin:8px;display: inline-block;float:left}
+#shop .xq .bigger{ width:458px; height:458px;position: relative;top: 0px;left: 10px;}
+#shop .xq .bigger>img{ width:460px; height:460px;border: 1px solid #ccc;}
+#shop .xq .bigger>div{width:230px; height:230px; background:yellow; opacity:0.5; position:absolute; top:0px; left:0px;cursor: move;}
+#shop .xq .big{border:1px solid gray; width:460px; height:460px; position:relative; left:490px; top:26px; overflow:hidden;background:#fff;}
+#shop .xq .big>img{ position:absolute; top:0px; left:0px; width:920px; height:920px;}
+
+#shop .xq #xq h2.title{font-weight: 100;color: #ff647c;height: 24px;line-height: 24px;font-size: 21px;}
+#shop .xq #xq h2.title span{color: #3E3E3E;padding-left: 10px;}
+#shop .xq #xq p.center{height: 20px;line-height: 20px;color: #999;font-size: 14px;margin-top: 26px;}
+#shop .xq #xq .banner{width:540px;height: 70px;background: #F5F5F5; color: #fff;margin-top: 20px;}
+#shop .xq #xq .banner .jia{width: 210px;height: 80px;}
+#shop .xq #xq .banner .jia em{line-height: 90px;font-size: 24px;padding-left: 20px;}
+#shop .xq #xq .banner .jia span{line-height: 80px;font-size: 35px;color:#E02B41}
+#shop .xq #xq .banner .fhz{font-size: 14px;height: 80px;margin-left: 20px}
+#shop .xq #xq .banner .fhz li{margin-top: 20px;padding:0 20px;border-right: 1px dashed #ccc;}
+#shop .xq #xq .banner .fhz li.jc{border-right: none;}
+#shop .xq #xq .banner .fhz li.scj .o-price{text-decoration: line-through;}
+
+#shop .xq #xq ul.lists{width: 520px;height:355px;border: 2px solid #ccc;border-top: none ;padding: 20px 0px;padding-left:20px;position: relative;}
+#shop .xq #xq ul.lists li.list_head{height: 20px;line-height: 20px;padding-left:0px;height: 30px;line-height: 30px;}
+#shop .xq #xq ul.lists li.list_head p{color: #999999;font-size: 14px;float: left;}
+#shop .xq #xq ul.lists li.list_head p span{padding-left: 20px;}
+
+#shop .xq #xq ul.lists li.colors{margin-top: 20px;}
+
+ #xcolor {margin-left: 47px;overflow: hidden;width: 447px;}
+ #xcolor li{float: left;border: 1px solid #ccc;margin-right: 10px;width:70px;height:30px; line-height: 30px;padding: 2px;cursor: pointer;}
+.yanse{width:70px;height:30px;border-radius:5px;}
+ #xcolor li img{height:30px ;width: 30px;float: left;}
+ #xcolor li span{float: left;padding-left: 8px;font-size:14px;}
+ #xcolor li.xuanz{width:70px;height:30px;border: 1px solid #00C3F5;}
+
+#shop .xq #xq ul.lists li.sizes{margin-top: 30px;}
+#xsize {margin-left: 47px;overflow: hidden;width: 417px;}
+#xsize li{float: left;border: 1px solid #ccc;margin-right: 10px;width:70px;height:30px; line-height: 30px;padding: 3px;cursor: pointer;border-radius:5px;}
+ #xsize li.xuanz{width:70px;height:30px;border: 1px solid #00C3F5;}
+
+#shop .xq #xq ul.lists li.num{margin-top: 30px; position: relative;}
+#shop .xq #xq ul.lists li.num p{margin-left:px;}
+#shop .xq #xq ul.lists li.num span{position: absolute;top: -2px;font-size:14px;left: 152px;color: #999;}
+#shop .xq #xq ul.lists li.num .nums{margin-left: 47px;overflow: hidden;width: 70px;height: 25px;border: 1px solid #ccc}
+#shop .xq #xq ul.lists li.num .nums li{float: left;}
+#shop .xq #xq ul.lists li.num .nums li input{width: 20px;height: 25px;float: left;border: none;}
+#shop .xq #xq ul.lists li.num .nums #xnum{width: 30px;height: 25px;line-height: 25px;text-align: center;}
+
+#shop .xq #xq ul.lists li.gou{margin-top: 30px;}
+#shop .xq #xq ul.lists li.gou input{height: 44px;width: 155px;margin-left: 20px;font-size: 18px;color: white;background: #2AC4F6;border: none;border-bottom: 2px solid #2AC4F6;}
+
+#tishi{height: 30px;line-height: 30px;color:red;background: #fff8f7;width: 535px;font-size: 16px;display: block;border-left: 2px solid #ccc;border-right: 2px solid #ccc;text-align: center;display: none;}
+
+.pinglun{background: url(../images/shop/【限量购】K.png) no-repeat ;overflow: hidden;height: 3389px;margin-bottom: 50px;}
+

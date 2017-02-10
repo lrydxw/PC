@@ -1,0 +1,227 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*-----------商品列表页----------------*/
+
+#list-content{
+	width:100%;
+	/*height:2000px;*/
+	border-top:1px solid #ccc;
+}
+.list-content{
+	width:1240px;
+	margin:0 auto;
+}
+.list-content h1{
+	height:46px;
+	/*font-size:14px;*/
+}
+.list-content h1 em{
+	color:#999;
+	font-size:14px;
+	
+}
+.list-content h1 .active{
+	color:#999;
+}
+.list-top-text{
+	
+	border:1px solid #ccc;
+	padding:15px 15px 15px 15px;
+	
+}
+.list-top-text h2{
+	font-size:14px;
+	line-height:40px;
+}
+.list-top-text h2 em{
+	color:#999;
+	display:inline-block;
+	width:60px;
+}
+.list-top-text h2 a{
+	padding:0 30px;
+}
+.list-top-text h2 i{
+	color:#999;
+	float:right;
+	padding-right:30px;
+	font-size:12px;
+}
+.list-content .list-h1{
+	font-size:24px;
+	height:60px;
+	margin-top:10px;
+	line-height:60px;
+}
+.list-content .list-h1 a{
+	padding-right:40px;
+}
+.list-content .list-h1 a.active{
+	color:#2ac4f6;
+}
+
+
+/*-----------商品列表页-pic----------------*/
+/*-------分页-------------*/
+.pagination{
+	margin:20px 0;
+}
+.pagination a{ text-decoration:none;}
+.pagination a:hover{ text-decoration:none;}
+.pagination {padding: 15px 20px;text-align: left;color: #ccc;}
+.pagination  a{display: inline-block;color: #428bca;display: inline-block;height: 25px;	line-height: 25px;	padding: 0 10px;border: 1px solid #ddd;	margin: 0 2px;/*border-radius: 4px;*/vertical-align: middle;}
+.pagination  a:hover{text-decoration: none;border: 1px solid #428bca;}
+.pagination  span.current{display: inline-block;height: 25px;line-height: 25px;padding: 0 10px;margin: 0 2px;color: #fff;background-color: #428bca;	border: 1px solid #428bca;/*border-radius: 4px;*/vertical-align: middle;}
+.pagination  span.disabled{	display: inline-block;height: 25px;line-height: 25px;padding: 0 10px;margin: 0 2px;	color: #bfbfbf;background: #f2f2f2;border: 1px solid #bfbfbf;/*border-radius: 4px;*/vertical-align: middle;}
+
+
+
+.list-pic{
+	width:1240px;
+	border-top:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	/*border:1px solid #ccc;*/
+}
+.list-pic-l-l{
+	/*display:block;*/
+	float:left;
+	width:310px;
+	/*height:388px;*/
+	border-bottom:1px solid #ccc;
+	padding-bottom:26px;
+}
+
+.list-pic-l-l img{
+	display:block;
+	width:240px;
+	height:240px;
+	margin:20px 0 20px 50px;
+	transition: transform 0.1s linear;
+}
+.list-pic-l-l img:hover{
+	transform: scale(1.1);
+}
+
+.list-pic-l-l h6{
+	font-size:14px;
+	padding-bottom:20px;
+	text-align:center;
+}
+
+.list-pic-l-l span{
+	font-size:16px;
+	color:#f14361;
+	margin-left:60px;
+}
+.list-pic-l-l i{
+	display:inline-block;
+	padding-left:10px;
+	background:#f14361;
+	border-radius:8px;
+	margin-left:10px;
+	transition: transform 0.1s linear;
+}
+.list-pic-l-l i:hover{
+	transform: scale(1.1);
+	}
+
+.list-pic-l-l i a{
+	color:#fff;
+	line-height:40px;
+	font-size:14px;
+		padding-left:10px;
+
+}
+	
+/*.list-pic-l{
+	border-bottom:1px solid #ccc;
+}
+.list-pic-l.no-line{
+	border:none;
+}
+.list-pic-l .list-pic-l-l{
+	width:309px;
+	height:388px;
+	float:left;
+	display:block;
+	text-align:center;
+}
+.list-pic-l .list-pic-l-l img{
+	width:240px;
+	height:240px;
+	padding:20px 0 20px 50px;
+}
+
+.list-pic-l .list-pic-l-l h6{
+	font-size:14px;
+	padding-bottom:20px;
+}
+.list-pic-l .list-pic-l-l p{
+	display:block;
+	font-size:16px;
+	color:#f14361;
+}*/
+
+
+/*-------------*/
+/*.list-num{
+	text-align:center;
+	height:95px;
+	padding-top:35px;
+}
+
+.list-num a{
+	display:inline-block;
+	line-height:30px;
+}
+em.active{
+	background:#ccc;
+}
+em{
+	display:inline-block;
+	width:30px;
+	height:30px;	
+}
+.list-num span{
+	border:1px solid #ccc;
+	display:inline-block;
+	width:30px;
+	height:30px;	
+}
+*/
+
+/*--------商品页无缝滚动---------------*/
+/*.list-content h4{
+	height:30px;
+	font-size:24px;
+	line-height:30px;
+}
+.list-arrow-left{
+	display:inline-block;
+	float:right;
+	width:30px;
+	height:30px;
+	border:1px solid #ccc;
+	text-align:center;
+	line-height:30px;
+}
+.list-arrow-right{
+	display:inline-block;
+	float:right;
+	width:30px;
+	height:30px;
+	border:1px solid #ccc;
+	text-align:center;
+	line-height:30px;
+	margin-right:6px;
+}
+*/
+
+
+
+
+
+							

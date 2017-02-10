@@ -1,0 +1,409 @@
+@charset "utf-8";
+/* CSS Document */
+
+.phone-con{
+	width:1240px;
+	margin:0 auto;
+	
+	/*background:red;*/
+	border-top:1px solid #ccc;
+	/*height:2000px;*/
+}
+.phone-t{
+	height:42px;
+	line-height:42px;
+}
+.mei3{
+	color:#999;
+}
+
+/*---------top产品详情------------*/
+
+.phone-top-pro{
+	height:850px;
+	padding-top:26px;
+
+}
+.phone-top-left{
+	width:680px;
+	float:left;
+	position:relative;
+}
+
+
+
+/*------左手机图片切换------------*/
+
+.phone-top-pic .tool{
+		/*display:none;*/
+		width:200px;
+		height:200px;
+		background-color:gold;
+		filter:alpha(opacity=50);
+		opacity:0.5;
+		position:absolute;
+		left:0;
+		top:0;
+		display:none;
+}
+
+.phone-top-pic-big{
+	width:480px;
+	height:480px;	
+	position:absolute;
+	left:680px;
+	top:170px;
+	border:1px solid #ccc;
+	overflow:hidden;
+	display:none;
+	
+}
+
+.phone-top-pic-big img{
+	width:1680px;
+	height:1680px;
+	position:absolute;
+	left:0;
+	top:0
+}
+
+
+.phone-phone.active{
+	display:block;
+	position:relative;
+}
+.phone-phone{
+	display:none;	
+}
+
+.phone-top-pic{
+	width:680px;
+	height:680px;
+	cursor:move;
+	position:relative;
+	left:0;
+	top:0;
+}
+.phone-top-pic{
+	width:680px;
+	height:680px;
+	
+}
+
+.phone-top-pic-min{
+	width:600px;
+	height:118px;
+	margin-left:80px;
+	/*border:1px solid #ccc;*/
+}
+/*.phone-top-pic-min li{
+	margin-left:10px;
+}*/
+.phone-top-pic-min .active{
+	width:118px;
+	height:118px;
+	float:left;
+	/*padding-left:50px;*/
+	border-bottom:1px solid #ccc;
+}
+
+.phone-top-pic-min img{
+	width:118px;
+	height:118px;
+	float:left;
+	/*text-align:center;
+	padding-left:50px;*/
+}
+.phone-top-right{
+	float:right;	
+}
+.phone-top-right h1{
+	font-weight: 600;
+}
+.p-r{
+	width:560px;
+	border-top:1px solid #ccc;
+}
+.phone-top-right h6{
+	padding:10px 0;
+	color:#999;
+	font-size:14px;
+}
+.phone-top-right h5{
+	color:#e02b70;
+	font-size:14px;
+}
+.phone-top-right .p-r{
+	margin-top:12px;
+}
+.phone-top-right h4{
+	padding:10px 0;
+}
+.phone-top-right h4 span{
+	display:inline-block;
+	border:1px solid #ccc;
+	width:86px;	
+	margin-left:10px;
+	line-height: 50px;	
+	text-align: center;
+	border-radius:8px;
+}
+.phone-top-right h4 span.active{
+	border:1px solid #00C3F5;
+}
+.phone-top-right h4 em{
+	display:inline-block;
+	width:40px;
+	height:38px;
+	line-height:38px;
+	border:1px solid #ccc;
+	text-align: center;
+}
+.phone-top-right h4 i{
+	display:inline-block;
+	width:60px;
+	height:38px;
+	line-height:38px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	text-align: center;
+}
+.phone-top-right h4 b{
+	/*display:inline-block;*/
+	padding-left:26px;
+}
+.phone-top-right h4 img{
+	display:inline-block;
+	
+}
+.phone-top-right h3{
+	background:url(../img/piao.png) no-repeat 50px;
+	padding:30px 0;	
+}
+
+.phone-top-right strong{
+	font-size:22px;
+	color:red;
+	font-weight: 600;
+}
+.phone-top-right button{
+	width:130px;
+	height:40px;
+	text-align:center;
+	line-height:40px;
+	color:#fff;
+	background:#2ac4f6;
+	border:0;
+	margin-top:16px;
+	border-radius:4px;
+}
+
+.p-r-t,.p-r-ys,.p-r-rl,.p-r-jg{
+	float:left;
+	color:#999;
+}
+.p-r-rl{
+	padding:0 10px;
+}
+.p-r p{padding-top:10px;color:#999;}
+
+
+/*------------con-选项卡------------------*/
+
+.phone-detail{
+	width:1240px;
+	/*height:800px;*/
+	
+}
+
+/*.phone-detail-top1.ceilbox{
+	margin:0 auto;
+	width:100%;
+}*/
+.phone-detail-top-all{
+	width:100%;
+	background:#333;
+	overflow:hidden;
+	border-bottom:1px solid #ccc;
+}
+.phone-detail-top1{
+	width:1240px;
+	margin:0 auto;
+	/*border-bottom:1px solid #ccc;*/
+	/*background:red;*/
+	overflow:hidden;
+}
+
+.phone-detail-top1 .phone-detail-text{
+	width:800px;
+	height:56px;
+	float:left;
+	/*border-bottom:1px solid #ccc;*/	
+}
+.phone-detail-top1 .phone-detail-text li{
+	float:left;	
+	width:108px;
+	height:56px;
+	display:block;
+	line-height:56px;
+	text-align:center;
+	
+}
+.phone-detail-top1 .phone-detail-text li.active{
+	color:#2ac4f6;
+	border-bottom:1px solid #2ac4f6;
+	width:108px;
+	height:56px;
+	display:block;
+	line-height:56px;
+	text-align:center;
+}
+
+.phone-detail-top1 .phone-detail-text li.active a{
+	color:#2AC4F6;
+}
+
+
+
+
+
+
+
+.phone-detail-top{
+	border-bottom:1px solid #ccc;
+	width:1240px;
+	overflow: hidden;
+	/*position:relative;
+	left:0;
+	top:0;*/
+}
+.phone-detail-text2{
+	float:right;
+	height:56px;
+	/*overflow:hidden;*/
+}
+.phone-detail-text2 li{
+	float:left;
+	margin-left:20px;
+	line-height:56px;
+}
+.phone-detail-text2 li a{
+	display:inline-block;
+	width:118px;
+	height:40px;
+	background:#2ac4f6;
+	text-align:center;
+	line-height:40px;
+	color:#fff;
+	border-radius:4px;
+}
+.phone-detail-text2 i,.phone-detail-text2 span{
+	font-size:24px;
+	color:#e02b41;
+}
+
+/*.phone-detail-text2 .t-money{
+	line-height:56px;
+}*/
+
+
+
+.phone-detail-text{
+	width:1240px;
+	height:56px;
+	/*float:left;*/
+	/*border-bottom:1px solid #ccc;*/	
+}
+.phone-detail-text li{
+	float:left;	
+	width:108px;
+	height:56px;
+	display:block;
+	line-height:56px;
+	text-align:center;
+	
+}
+.phone-detail-text li.active{
+	color:#2ac4f6;
+	border-bottom:1px solid #2ac4f6;
+	width:108px;
+	height:56px;
+	display:block;
+	line-height:56px;
+	text-align:center;
+}
+
+.phone-detail-text li.active a{
+	color:#2AC4F6;
+}
+
+/*---------table---------------*/
+
+.phone-detail-s{
+	margin-top:40px;
+	/*width:1240px;*/
+}
+.phone-detail-sp{
+	display:none;
+	/*width:1240px;*/
+	
+}
+.phone-detail-sp.active{
+	display:block;
+}
+.phone-detail-sp table{
+	border-collapse:collapse;
+	width:1240px;
+}
+
+.phone-detail-sp tr{
+	height:50px;	
+	border:1px solid #ccc;
+}
+.phone-detail-sp td{
+	height:50px;
+	border:1px solid #ccc;
+	padding-left:40px;
+}
+.phone-detail-sp th{
+	width:298px;	
+}
+/*========cfix===============*/
+#cfix{width:70px ;height:180px;background:#fff;position:fixed;bottom: 100px;right: 10px;border: 1px solid #ccc;z-index: 1;}
+#cfix li.cf{height: 44px;width: 70px;border-bottom: 1px solid #ccc;cursor: pointer;}
+#cfix li.ccar{background: url(img/cars1.png) no-repeat 25px 12px;position: relative;}
+#cfix li.ccar:hover{background:#ff647c url(img/cars.png) no-repeat 25px 12px;}
+#cfix li.phone{background: url(img/phone0.png) no-repeat 28px 12px;position: relative;}
+#cfix li.phone:hover{background:#ff647c url(img/phone1.png) no-repeat 28px 12px;}
+#cfix li.kefu{background: url(img/ren1.png) no-repeat 26px 12px;}
+#cfix li.kefu:hover{background:#ff647c ;}
+#cfix li.kefu a{text-align:center;line-height: 44px;color: white;text-decoration: none;font-size: 14px;font-weight: bold;padding-left: 7px;}
+#cfix li.back{background: url(img/up.png) no-repeat 25px 12px;}
+#cfix li.back:hover{background:#ff647c ;}
+#cfix li.back a{text-align:center;line-height: 44px;color: white;text-decoration: none;font-size: 14px;font-weight: bold;padding-left: 7px;}
+#cfix .sz{height: 20px;width: 20px;text-align: center;border-radius: 50%;background: greenyellow;position: absolute;top: 2px;right: 5px;display: block;}
+/*购物车*/
+#ccars{width: 340px;height: 210px;border: 1px solid red;position: absolute;top:-90px;right: 68px;display:none;z-index: 1;}
+#ccars .up{height: 160px;width: 340px;background: #fff;overflow-y: scroll;overflow-x: hidden;}
+#ccars .up li{width: 330px;}
+#ccars .down #tiao{text-align: center;font-size: 16px;position: absolute;top: 60px;left: 105px;display: none;}
+
+/*商品*/
+#xcars li {border-bottom: 1px dashed #ccc;height: 65px;width: 320px;padding: 10px;}
+#xcars li img{float: left;width: 58px;height: 58px;border: 2px solid #ccc;margin-right: 10px;}
+#xcars li .zh{width: 59%;float: left;height: 20px;color: #999;line-height: 20px;}
+#xcars li .you{float: left;height: 20px;line-height:20px;margin-top: 22px;}
+#xcars li .you .price{font-size: 16px;color:#ff647c;}
+#xcars li .you .gs{font-size: 13px;color: #999;}
+/*购物车下方数值*/
+#ccars .down{height: 49px;width: 340px;line-height: 49px;background: #fff9fb;border-top: 1px solid #ccc;padding: 0 !important;}
+#ccars .down #li1{margin-left: 10px;}
+#ccars .down #li2{font-size: 16px;color:#FF647C;cursor: pointer;}
+#ccars .down #li3{position: absolute;left: 160px;bottom: 0px;;}
+#ccars .down #li4{height: 35px;width: 120px;border-radius: 5px;line-height: 35px;text-align: center;margin-top: 5px;margin-right: 5px;color: white;background:#ff647c url(../images/index/cars.png) no-repeat 8px 8px;padding-left: 8px;}
+#ccars .down #li4 a{color: white;}
+#phone{width:160px;padding: 10px;border: 2px solid red;position: absolute;top: -62px;right:66px;background: #fff;display: none;}
+#phone p{height: 16px;width: 160px;text-align: center;margin-bottom: 5px;}
+
+
+#car .down #li41{height: 35px;width: 120px;border-radius: 5px;line-height: 35px;text-align: center;margin-top: 5px;margin-right: 5px;color: white;background:#ff647c url(../images/index/cars.png) no-repeat 8px 8px;padding-left: 8px;}
